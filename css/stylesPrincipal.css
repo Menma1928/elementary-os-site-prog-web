@@ -190,6 +190,20 @@ body {
     color: #fff;
     
 }
+.apps{
+    background-color: lightgreen;
+    padding: 60px 20px;
+
+}
+.apps > .texto1 {
+    text-align: center;
+}
+
+.apps > .texto2{
+    padding: 60px 27%;
+}
+
+
 #appcenter h2{
     color: #fff;
 }
