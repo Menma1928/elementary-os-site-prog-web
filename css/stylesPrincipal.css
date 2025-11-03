@@ -22,10 +22,11 @@ body {
 /* Navegación */
 .navbar {
     background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    width: max-content;
+}
+.nav-container{
+    
+    
 }
 
 .nav-container {
@@ -36,6 +37,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .logo {
     width: 30px;
@@ -52,21 +55,27 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: color 0.3s ease;
+    
 }
 
 .nav-links a:hover {
-    color: #3689e6;
+    color: #537091;
 }
+
+
 
 /* Sección Hero */
 .hero {
     padding: 80px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+   
+    
     background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+    align-content: center;
+    text-align: center;
+    
+}
+.imagen{
+    padding:5%
 }
 
 .hero-content h1 {
@@ -75,6 +84,8 @@ body {
     color: #333;
     font-weight: 300;
     letter-spacing: -1px;
+    align-content: center;
+     
 }
 
 .hero-content p {
@@ -82,6 +93,7 @@ body {
     color: #666;
     margin-bottom: 30px;
     line-height: 1.5;
+    
 }
 
 .btn-primary {
@@ -173,18 +185,44 @@ body {
 /* Sección Aplicaciones */
 .applications {
     padding: 60px 20px;
-    background-color: #f8f8f8;
+    background-color: #7239b3;
+    background-image: linear-gradient(to right bottom,#4c158a,#ad65d6);
+    color: #fff;
+    
+}
+.apps{
+    background-color: lightgreen;
+    padding: 60px 20px;
+
+}
+.apps > .texto1 {
+    text-align: center;
 }
 
+.apps > .texto2{
+    padding: 60px 27%;
+}
+
+
+#appcenter h2{
+    color: #fff;
+}
+#appcenter p{
+    color: #fff;
+}
 .applications h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     color: #333;
 }
 
-.applications > .container > p {
+.productivity h3{
     text-align: center;
+}
+
+.applications > .container > p {
+    text-align: left;
     font-size: 18px;
     color: #666;
     margin-bottom: 40px;
@@ -290,7 +328,7 @@ footer {
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 0px;
     }
 
     .features-grid,
