@@ -18,10 +18,11 @@
                         <circle cx="11" cy="11" r="10" fill="none" stroke="#3689e6" stroke-width="1.5"/>
                     </svg></a>
                 </li>
+                <li><a href="soporte.html">Soporte</a></li>
                 <li><a href="desarrollar.html">Desarrolar</a></li>
                 <li><a href="participa.html">Participa</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="tienda.html">Tienda</a>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
     </nav>
@@ -31,101 +32,138 @@
         <div class="hero-content">
             <h1>Elementary OS</h1>
             <p>El sustituto de Windows y macOS hecho a conciencia, potente y ético</p>
-            <button class="btn-primary">Descargar Elementary OS</button>
+            
         </div>
         <div class="imagen" id="img1">
             <img src="imgs/index/desktop.jpg" alt="primera imagen" width="60%">
         </div> 
 
         <div>
-            <p><h2>Pague lo que pueda: </h2></p>
+            <h2>Pague lo que pueda: </h2>
+            <label>
+            <input type="radio" name="grupo-opciones" value="opcion1">
+            $ 10
+            </label>
 
+            <label>
+            <input type="radio" name="grupo-opciones" value="opcion2">
+            $ 20
+            </label>
+
+            <label>
+            <input type="radio" name="grupo-opciones" value="opcion3">
+            $ 30
+            </label>
+
+            <label>
+            <input type="text-area" name="grupo-opciones" value="opcion4">
+            
+            </label>
+            <button class="btn-primary">Descargar Elementary OS</button>
+            
         </div>
         
     </section>
-
+    
     <!-- Sección Novedades -->
     <section class="whats-new" id="caracteristicas">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="100" height="100">
+                <circle cx="11" cy="11" r="10" fill="none" stroke="#3689e6" stroke-width="1.5"/>
+            </svg></a>
+        </div>
         <div class="container">
             <h2>Qué hay de nuevo en Elementary OS 8</h2>
-            <p>elementary OS 8 trae la Sesión segura, un nuevo Dock con características productivas de multitarea y manejo de ventanas, diseño inclusivo y mucho más.</p>
+            <p>¡Sin preocupaciones, nosotros nos preocupamos por ti! elementary OS 8 trae la Sesión segura, que verifica que las aplicaciones respeten tu privacidad y pidan siempre tu consentimiento, un nuevo Dock con características productivas de multitarea y manejo de ventanas, y empodera nuestra comunidad a través del Diseño Inclusivo.</p>
         </div>
     </section>
 
     <!-- Sección Productividad -->
-    <section class="productivity">
-        <div class="container">
-            <h2>Productividad y diversión al máximo</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Vista Multitarea</h3>
-                    <p>Organiza tus tareas pendientes en espacios de trabajo separados</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Modo Minipantalla</h3>
-                    <p>Mantente atento a una cosa mientras trabajas en otra</p>
-                </div>
-                <div class="feature-card">
-                    <h3>No Molestar</h3>
-                    <p>Apártalo todo y conserva tu concentración</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Sección Aplicaciones -->
     <section class="applications" id="aplicaciones">
+        
+        <div class="container" id="appcenter">
+            <h2>Consígalo en el <b>Centro de Aplicaciones</b></h2>
+            <p>Obtenga aplicaciones gratuitas y de pago en el Centro 
+                de Aplicaciones, la tienda de aplicaciones de código 
+                abierto y que permite que pague lo que usted quiera, 
+                para desarrolladores independientes. Cada aplicación 
+                ha sido revisada y seleccionada por elementary para 
+                garantizar una experiencia nativa, segura y que respete 
+                tu privacidad.</p>
+
+            
+            <button id="appBott1">
+                Descubra Aplicaciones en el Centro de Aplicaciones
+            </button>
+            <br>
+            <button id="appBott2">
+                Lea el blog del centro de aplicaciones 
+            </button>
+            <br>
+            <button id="appBott3">
+                Conviértase en desarrollador
+            </button>   
+        
+        <div class="container2">
+            <div class="imagen" id="img1">
+                <img src="imgs/index/appcenter.png" alt="imagen de aplicaciones" width="80%">
+            </div> 
+        </div>
+    </section>
+
+
+
+
+    <section class="productivity">
         <div class="container">
-            <h2>Consígalo en el Centro de Aplicaciones</h2>
-            <p>Obtenga aplicaciones gratuitas y de pago, revisadas y seleccionadas por elementary</p>
-            <div class="apps-showcase">
-                <div class="app-item">
-                    <div class="app-icon">🎵</div>
-                    <p>Música</p>
+            <h2>Productividad y diversión al máximo</h2>
+
+            <h3>Eleve su productividad y concentración con la Vista Multitarea, 
+            el modo minipantalla, la función No molestar y mucho más. O ponga 
+            todo el trabajo a un lado mientras ve videos o juega.</h3>
+
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Vista Multitarea</h3>
+                    <p>Las áreas de trabajo le ayudan a 
+                        organizar sus tareas pendientes. 
+                        Separe el trabajo del ocio, pero 
+                        ambos quedando a un solo toque de 
+                        distancia.</p>
                 </div>
-                <div class="app-item">
-                    <div class="app-icon">🌐</div>
-                    <p>Web</p>
+                <div class="feature-card">
+                    <h3>Modo Minipantalla</h3>
+                    <p>Mantente atento a una cosa mientras 
+                        trabajas en otraSi se trata de una 
+                        película, un juego o un proceso de 
+                        la terminal, el modo mini-pantalla 
+                        le permite estar al tanto de una cosa 
+                        mientras trabaja en otra. </p>
                 </div>
-                <div class="app-item">
-                    <div class="app-icon">✉️</div>
-                    <p>Correo</p>
-                </div>
-                <div class="app-item">
-                    <div class="app-icon">📷</div>
-                    <p>Fotos</p>
-                </div>
-                <div class="app-item">
-                    <div class="app-icon">🎬</div>
-                    <p>Videos</p>
-                </div>
-                <div class="app-item">
-                    <div class="app-icon">📅</div>
-                    <p>Calendario</p>
+                <div class="feature-card">
+                    <h3>No Molestar</h3>
+                    <p>Apártelo todo y conserve su 
+                        concentración en el trabajo, o 
+                        mantenga a raya todas las 
+                        notificaciones mientras mira una 
+                        película. El modo No molestar 
+                        interrumpe la emisión de notificaciones.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Sección Privacidad -->
     <section class="privacy" id="privacidad">
         <div class="container">
             <h2>Respeto por la privacidad en todos los ámbitos</h2>
-            <div class="privacy-features">
-                <div class="privacy-item">
-                    <h4>Sin escuchas</h4>
-                    <p>Indicadores visuales cuando se usa micrófono o se consume energía</p>
-                </div>
-                <div class="privacy-item">
-                    <h4>Permisos explícitos</h4>
-                    <p>Las aplicaciones deben pedir permiso para acceder a tus datos</p>
-                </div>
-                <div class="privacy-item">
-                    <h4>Código abierto</h4>
-                    <p>Todo nuestro código está disponible para su revisión</p>
-                </div>
-            </div>
         </div>
+        
+        
+
     </section>
 
     <!-- Footer -->
