@@ -163,13 +163,10 @@ body {
     background-color: #f8f8f8;
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
+
 
 .feature-card h3 {
     font-size: 20px;
@@ -191,9 +188,20 @@ body {
     
 }
 .apps{
-    background-color: lightgreen;
+    
+    background-image: linear-gradient(rgba(43, 111, 171, 0.5)),
+    url('paisaje.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 20px;
+    
 
+
+}
+.apps div{
+    color:#fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .apps > .texto1 {
     text-align: center;
@@ -202,8 +210,25 @@ body {
 .apps > .texto2{
     padding: 60px 27%;
 }
+.bb-grid{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+.bb-grid1 img{
+    float: right;
+    margin: 16px;
+}
+.papa-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+}
 
+.img-grid{
+    
+}
 #appcenter h2{
     color: #fff;
 }
@@ -270,11 +295,7 @@ body {
     color: #333;
 }
 
-.privacy-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
+
 
 .privacy-item {
     padding: 30px;
@@ -331,8 +352,7 @@ footer {
         gap: 0px;
     }
 
-    .features-grid,
-    .privacy-features {
+    .features-grid{
         grid-template-columns: 1fr;
     }
 }
