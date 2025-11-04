@@ -2,8 +2,7 @@
 body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #1A1A1A
-;
+    background-color: #1A1A1A;
     color: white;
 }
 
@@ -92,8 +91,7 @@ body {
     flex: 1;
     min-width: 280px;
     max-width: 350px;
-    background-color: #1A1A1A
-;
+    background-color: #1A1A1A;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #1A1A1A;
@@ -122,23 +120,40 @@ body {
     margin: 5px 0;
 }
 
-/* ====== Sección Seasonal / Productos ====== */
+/* ====== Cuadrícula de productos ====== */
 .product-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
+    align-items: stretch; /* 🔹 todos los productos misma altura */
 }
 
+/* ====== Tarjeta de producto ====== */
 .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-    max-width: 350px;
+    width: 320px;
+    min-height: 420px; /* 🔹 altura uniforme */
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* === Efecto hover en las imágenes === */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* ====== Imagen del producto ====== */
 .product img {
     width: 100%;
-    max-width: 350px;
+    height: 220px; /* 🔹 misma altura para todas */
+    object-fit: cover; /* 🔹 recorta sin deformar */
     border-radius: 8px;
     background-color: #1A1A1A;
     border: 2px solid transparent;
@@ -153,45 +168,24 @@ body {
     cursor: pointer;
 }
 
+/* ====== Texto del producto ====== */
 .product h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 15px;
+    margin: 15px 0 8px;
     color: white;
+    flex-grow: 1;
 }
 
 .product p {
     color: #ccc;
     font-size: 16px;
+    margin: 0;
 }
 
-/* ====== Responsividad ====== */
-@media (max-width: 768px) {
-    .intro h1 {
-        font-size: 36px;
-    }
-
-    .device-grid,
-    .product-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .product {
-        text-align: center;
-    }
-    
-}
 /* ====== Sección de envíos ====== */
 .shipping {
-    background-color: #1A1A1A
-;
+    background-color: #1A1A1A;
     padding: 80px 100px;
     text-align: left;
     color: #ccc;
@@ -260,8 +254,29 @@ body {
     color: #bbb;
 }
 
-/* ====== Ajustes responsivos ====== */
+/* ====== Responsividad ====== */
 @media (max-width: 768px) {
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .device-grid,
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .product {
+        text-align: center;
+        width: 100%;
+    }
+
     .shipping {
         padding: 50px 30px;
     }
