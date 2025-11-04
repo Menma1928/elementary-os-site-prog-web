@@ -1,305 +1,279 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apoye el desarrollo - elementary OS</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="navbar">
-        <nav class="menu">
-            <ul>
-                <li>Seasonal</li>
-                <li>T-Shirts</li>
-                <li>Outerwear</li>
-                <li>Mugs</li>
-                <li>Laptop Sleeves</li>
-                <li>Posters</li>
-                <li>Pillows</li>
-                <li>Set of Pin Buttons</li>
-                <li>Mouse Pad</li>
-            </ul>
-        </nav>
-        <div class="cart">
-            Carrito vacío
-        </div>
-    </header>
+/* ====== Configuración general ====== */
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #1A1A1A
+;
+    color: white;
+}
 
-    <main class="content">
-        <!-- Sección principal -->
-        <section class="intro">
-            <h1>Apoye el desarrollo.<br>Obtenga productos elementary.<br>Todos ganan.</h1>
-            <p>
-                Cada compra se destina al desarrollo de elementary OS, sus aplicaciones y sus servicios.<br>
-                Somos un equipo pequeño, en su mayoría voluntarios, que trabajamos constantemente<br>
-                para mejorar elementary; tu apoyo ayuda a que elementary OS sea más sostenible.
-            </p>
-        </section>
+/* ====== Barra de navegación ====== */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
 
-        <!-- Sección de dispositivos -->
-        <section class="devices">
-            <h2>Dispositivos</h2>
-            <p>
-                Los dispositivos de hardware con elementary OS se pueden comprar en los siguientes minoristas.
-                Comprar en estas empresas ayuda a mantener elementary OS.
-            </p>
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
 
-            <div class="device-grid">
-                <div class="device">
-                    <h3>Laptop With Linux →</h3>
-                    <hr>
-                    <p>Ordenadores portátiles, mini ordenadores de sobremesa</p>
-                    <p>Con sede en los Países Bajos</p>
-                </div>
+.menu li {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    font-size: 15px;
+}
 
-                <div class="device">
-                    <h3>Slimbook →</h3>
-                    <hr>
-                    <p>Ordenadores portátiles, ordenadores de sobremesa, mini ordenadores de sobremesa, todo-en-uno</p>
-                </div>
+.menu li:hover {
+    color: white;
+    transform: scale(1.05);
+}
 
-                <div class="device">
-                    <h3>Star Labs →</h3>
-                    <hr>
-                    <p>Portátiles</p>
-                    <p>Con sede en Reino Unido</p>
-                    <p>Envío internacional</p>
-                </div>
-            </div>
-        </section>
+.cart {
+    color: #ccc;
+    font-size: 15px;
+}
 
-        <!-- Sección Seasonal -->
-        <section class="seasonal">
-            <h2>Seasonal</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/Sudadera1.png" alt="Sudadera 1">
-                    <h3>"Learn Vala, Do Future" Hoodie - Unisex (Seasonal)</h3>
-                    <p>$55+</p>
-                </div>
+/* ====== Contenido principal ====== */
+.content {
+    padding: 60px 80px;
+    max-width: 1300px;
+    margin: auto;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Sudadera2.png" alt="Sudadera 2">
-                    <h3>"Learn Vala, Do Future" Pullover - Unisex (Seasonal)</h3>
-                    <p>$45+</p>
-                </div>
+/* ====== Sección introductoria ====== */
+.intro h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Sudadera3.png" alt="Sudadera 3">
-                    <h3>Rainbow Logomark Hoodie - Unisex (Seasonal)</h3>
-                    <p>$55+</p>
-                </div>
-            </div>
-        </section>
+.intro p {
+    color: #ccc;
+    font-size: 20px;
+    line-height: 1.6;
+}
 
-        <!-- Sección T-Shirts -->
-        <section class="T-Shirts">
-            <h2>T-Shirts</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/Playera1.png" alt="Playera 1">
-                    <h3>"Learn Vala, Do Future" T-Shirt - Unisex</h3>
-                    <p>$55+</p>
-                </div>
+/* ====== Sección de dispositivos ====== */
+.devices {
+    margin-top: 100px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Playera2.png" alt="Playera 2">
-                    <h3>"Learn Vala, Do Future" Pullover - Unisex</h3>
-                    <p>$45+</p>
-                </div>
+.devices h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Playera3.png" alt="Playera 3">
-                    <h3>Rainbow Logomark T-Shirt - Unisex</h3>
-                    <p>$55+</p>
-                </div>
-            </div>
-        </section>
+.devices p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
 
-        <!-- Mugs -->
-        <section class="mugs">
-            <h2>Mugs</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/Taza1.png" alt="Taza 1">
-                    <h3>"Learn Vala, Do Future" Mug</h3>
-                    <p>$25+</p>
-                </div>
+/* ====== Cuadros de dispositivos ====== */
+.device-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Taza2.png" alt="Taza 2">
-                    <h3>"Learn Vala, Do Future" Coffee Cup</h3>
-                    <p>$20+</p>
-                </div>
+.device {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background-color: #1A1A1A
+;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1A1A1A;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Taza3.png" alt="Taza 3">
-                    <h3>Rainbow Logomark Mug</h3>
-                    <p>$22+</p>
-                </div>
-            </div>
-        </section>
+.device:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
 
-        <!-- Laptop Sleeves -->
-        <section class="laptops">
-            <h2>Laptop Sleeves</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/Lap1.png" alt="Lap 1">
-                    <h3>"Learn Vala" Laptop Sleeve</h3>
-                    <p>$55+</p>
-                </div>
+.device h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Lap2.png" alt="Lap 2">
-                    <h3>"Do Future" Laptop Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+.device hr {
+    border: 1px solid #444;
+    margin-bottom: 15px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Lap3.png" alt="Lap 3">
-                    <h3>Rainbow Logomark Laptop Sleeve</h3>
-                    <p>$55+</p>
-                </div>
+.device p {
+    color: #ccc;
+    font-size: 16px;
+    margin: 5px 0;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Lap4.png" alt="Lap 2">
-                    <h3>"Do Future" Laptop Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+/* ====== Sección Seasonal / Productos ====== */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Lap5.png" alt="Lap 2">
-                    <h3>"Do Future" Laptop Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+.product {
+    text-align: left;
+    max-width: 350px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Lap6.png" alt="Lap 2">
-                    <h3>"Do Future" Laptop Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+/* === Efecto hover en las imágenes === */
+.product img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    background-color: #1A1A1A;
+    border: 2px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s, filter 0.3s;
+}
 
-            </div>
-        </section>
+.product img:hover {
+    transform: scale(1.05);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
 
+.product h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: white;
+}
 
-        <!-- Posters -->
-        <section class="posters">
-            <h2>Posters</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/Poster1.png" alt="Lap 1">
-                    <h3>"Learn Vala" Poster Sleeve</h3>
-                    <p>$55+</p>
-                </div>
+.product p {
+    color: #ccc;
+    font-size: 16px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Poster2.png" alt="Lap 2">
-                    <h3>"Do Future" Poster Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+/* ====== Responsividad ====== */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 36px;
+    }
 
-                <div class="product">
-                    <img src="Imagenes/Poster3.png" alt="Lap 3">
-                    <h3>Rainbow Logomark Poster Sleeve</h3>
-                    <p>$55+</p>
-                </div>
+    .device-grid,
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 
-                <div class="product">
-                    <img src="Imagenes/Poster4.png" alt="Lap 2">
-                    <h3>"Do Future" Poster Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 
-                <div class="product">
-                    <img src="Imagenes/Poster5.png" alt="Lap 2">
-                    <h3>"Do Future" Poster Sleeve</h3>
-                    <p>$45+</p>
-                </div>
+    .product {
+        text-align: center;
+    }
+    
+}
+/* ====== Sección de envíos ====== */
+.shipping {
+    background-color: #1A1A1A
+;
+    padding: 80px 100px;
+    text-align: left;
+    color: #ccc;
+}
 
-                <div class="product">
-                    <img src="Imagenes/Poster6.png" alt="Lap 2">
-                    <h3>"Do Future" Poster Sleeve</h3>
-                    <p>$45+</p>
-                </div>
-                
-            </div>
-        </section>
+.shipping h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
 
+.shipping p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
 
-                <!-- Pillows -->
-        <section class="pillows">
-            <h2>Mugs</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/pill1.png" alt="Taza 1">
-                    <h3>"Pillow Vala, Do Future" Mug</h3>
-                    <p>$25+</p>
-                </div>
+.shipping-note {
+    font-size: 15px;
+    color: #999;
+    max-width: 950px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/pill2.png" alt="Taza 2">
-                    <h3>"Pillow Vala, Do Future" Coffee Cup</h3>
-                    <p>$20+</p>
-                </div>
+/* ====== Pie de página ====== */
+.footer {
+    background-color: #333;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    font-size: 14px;
+}
 
-                <div class="product">
-                    <img src="Imagenes/pill3.png" alt="Taza 3">
-                    <h3>Pillow Logomark Mug</h3>
-                    <p>$22+</p>
-                </div>
-            </div>
-        </section>
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.footer-right ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
 
+.footer-right li {
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.3s, transform 0.2s;
+}
 
-                      <!-- Set of Pin Buttons -->
-        <section class="Set of Pin Buttons">
-            <h2>Set of Pin Buttons</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Imagenes/pin1.png" alt="Taza 1">
-                    <h3>"Set of Pin Buttons" Mug</h3>
-                    <p>$25+</p>
-                </div>
-    </section>
+.footer-right li:hover {
+    color: white;
+    transform: scale(1.05);
+}
 
-                <!-- Sección de envíos -->
-        <section class="shipping">
-            <h2>Envíos a todo el mundo</h2>
-            <p>
-                ¡Enviamos ropa y accesorios a todo el mundo! Los pedidos se realizan bajo demanda, normalmente en un plazo de 
-                2–7 días y son enviados con el método que elija al momento de pagar. Debido al COVID-19, los pedidos pueden retrasarse. 
-                La producción está según lo programado, pero aún pueden producirse retrasos con el cumplimiento y el envío según el pedido, 
-                el método de envío y el destino.
-            </p>
-            <p class="shipping-note">
-                Se excluyen Crimea, Cuba, Irán, Siria y Corea del Norte. Los métodos de envío, los precios y los tiempos varían según el país. 
-                Los envíos afuera de los EE. UU. pueden incurrir en tarifas de aduana según los países de origen y destino.
-            </p>
-        </section>
+.lang {
+    background-color: #333;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: #bbb;
+}
 
-        <!-- Pie de página -->
-        <footer class="footer">
-            <div class="footer-left">
-                <p>© 2025 elementary, Inc</p>
-                <span class="lang"> Idioma</span>
-            </div>
-            <div class="footer-right">
-                <ul>
-                    <li>Prensa</li>
-                    <li>Marca</li>
-                    <li>OEMs</li>
-                    <li>Privacidad</li>
-                    <li>Equipo</li>
-                    <li>Código abierto</li>
-                </ul>
-            </div>
-        </footer>
+/* ====== Ajustes responsivos ====== */
+@media (max-width: 768px) {
+    .shipping {
+        padding: 50px 30px;
+    }
 
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 
-    </main>
-</body>
-</html>
+    .footer-right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
